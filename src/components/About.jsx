@@ -1,5 +1,6 @@
 import React from "react";
 import { about, assets } from "../assets";
+import { motion } from "framer-motion";
 
 const About = () => {
   return (
@@ -17,13 +18,23 @@ const About = () => {
         Smart Living, Inspired Life
       </p>
       <div className="flex flex-col md:flex-row items-center justify-between md:items-start gap-20">
-        <img
+        <motion.img
           src={assets.smartbin1}
           className="w-full sm:w-3/6 max-w-lg shadow-lg"
           alt="brand"
+          initial={{ opacity: 0, y: 0 }}
+          transition={{ duration: 1.5 }}
+          whileInView={{ opacity: 1, x: -50 }}
+          viewport={{ once: true }}
         />
 
-        <div className="flex flex-col items-center md:items-start  text-gray-600">
+        <motion.div
+          className="flex flex-col items-center md:items-start  text-gray-600"
+          initial={{ opacity: 0, y: 100 }}
+          transition={{ duration: 1.5 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+        >
           <p className="my-10 max-w-lg">
             Aile Power is committed and dedicated in making living comfortable,
             convenient, smart and Accessible, Smart Living is not just about
@@ -40,10 +51,12 @@ const About = () => {
               </div>
             ))}
           </div>
-          <button className="bg-orange-600 text-white px-8 py-2 mt-10 rounded">
-            Learn More
-          </button>
-        </div>
+          <a href="#Features">
+            <button className="bg-orange-600 text-white px-8 py-2 mt-10 rounded">
+              Learn More
+            </button>
+          </a>
+        </motion.div>
       </div>
     </div>
   );

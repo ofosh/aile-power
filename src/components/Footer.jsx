@@ -1,5 +1,6 @@
 import React from "react";
 import { assets } from "../assets";
+import { motion } from "framer-motion";
 
 const Footer = () => {
   const today = new Date();
@@ -8,7 +9,13 @@ const Footer = () => {
       className="pt-10 px-4 md:px-20 lg:px-14 bg-gray-900 max-w-full overflow-hidden"
       id="Footer"
     >
-      <div className="container mx-auto flex flex-col md:flex-row justify-between items-start md:items-center ">
+      <motion.div
+        className="container mx-auto flex flex-col md:flex-row justify-between items-start md:items-center "
+        initial={{ opacity: 0, y: 100 }}
+        transition={{ duration: 1.5 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+      >
         <div className="flex justify-start">
           <img src={assets.darkLogo} width={500} alt="" />
         </div>
@@ -65,7 +72,7 @@ const Footer = () => {
             We will send you weekly updates for better Product management.
           </p>
         </div>
-      </div>
+      </motion.div>
       <div className="border-t border-gray-700 py-4 mt-4 text-center text-gray-500">
         Copyright {today.getFullYear()} © Aile Power. All rights reserved.
       </div>

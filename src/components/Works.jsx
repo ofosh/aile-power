@@ -1,10 +1,11 @@
 import React from "react";
 import { works } from "../assets";
+import { motion } from "framer-motion";
 
 const Works = () => {
   return (
     <div className="flex flex-col items-center justify-center container mx-auto p-14 md:px-20 lg:px-32 max-w-full overflow-hidden ">
-      <h1 className="text-2xl sm:text-4xl font-bold mb-2">
+      <h1 className="text-3xl sm:text-5xl font-bold mb-2">
         How{" "}
         <span className="underline underline-offset-4 decoration-1 under font-light">
           it works?
@@ -14,7 +15,13 @@ const Works = () => {
         Everybody loves tech gadgets, But our’s is different. Here is how it
         works. Its simple and easy to install.
       </p>
-      <div className="flex items-center gap-10 pt-8 mb-4 justify-center flex-col md:flex-row">
+      <motion.div
+        className="flex items-center gap-10 pt-8 mb-4 justify-center flex-col md:flex-row"
+        initial={{ opacity: 0, y: 100 }}
+        transition={{ duration: 1.5 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+      >
         {works.map((item, index) => (
           <div key={index} className="flex flex-col gap-6 text-center">
             <img
@@ -30,7 +37,7 @@ const Works = () => {
             </p>
           </div>
         ))}
-      </div>
+      </motion.div>
     </div>
   );
 };

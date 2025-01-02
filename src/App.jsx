@@ -6,17 +6,21 @@ import Works from "./components/Works";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import PlayVideo from "./components/PlayVideo";
+// import ProductFeatures from "./components/ProductFeatures";
+import { useState } from "react";
 
 const App = () => {
+  const [playState, setPlayState] = useState(false);
   return (
     <div className="overflow-hidden max-w-full container">
-      <Hero />
+      <Hero setPlayState={setPlayState} />
       <About />
       <Works />
       <Features />
+      {/* <ProductFeatures /> */}
       <Contact />
       <Footer />
-      <PlayVideo />
+      <PlayVideo playState={playState} setPlayState={setPlayState} />
     </div>
   );
 };

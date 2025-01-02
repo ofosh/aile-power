@@ -47,9 +47,11 @@ const Navbar = () => {
             Reviews
           </a>
         </ul>
-        <button className="hidden md:block bg-orange-500 text-white font-semibold px-8 py-2 rounded-full">
-          Pre-Order Now
-        </button>
+        <a href="#Contact">
+          <button className="hidden md:block bg-orange-500 text-white font-semibold px-8 py-2 rounded-full">
+            Contact Us
+          </button>
+        </a>
         <img
           src={assets.menu_icon}
           className="md:hidden w-7 cursor-pointer"

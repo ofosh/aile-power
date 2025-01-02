@@ -2,10 +2,11 @@ import React from "react";
 import { FaLocationDot } from "react-icons/fa6";
 import { MdEmail } from "react-icons/md";
 import { FaPhoneVolume } from "react-icons/fa6";
-import { FaGithub } from "react-icons/fa";
-import { FaLinkedinIn } from "react-icons/fa";
-import { FaCodepen } from "react-icons/fa6";
+import { FaInstagram } from "react-icons/fa";
+
 import { IoSend } from "react-icons/io5";
+import { motion } from "framer-motion";
+
 const Contact = () => {
   const [result, setResult] = React.useState("");
 
@@ -37,7 +38,13 @@ const Contact = () => {
       className="overflow-hidden max-w-full container mx-auto py-12 bg-white lg:px-16 px-8"
       id="Contact"
     >
-      <div className="flex items-center justify-between flex-col md:flex-row">
+      <motion.div
+        className="flex items-center justify-between flex-col md:flex-row"
+        initial={{ opacity: 0, y: 100 }}
+        transition={{ duration: 1.5 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+      >
         <div className="flex items-start justify-center flex-col py-4 px-3">
           <div>
             <h2 className="text-4xl font-bold text-black sm:text-5xl">
@@ -85,17 +92,18 @@ const Contact = () => {
                 </p>
               </div>
             </div>
-          </div>
-          {/* <div className="py-4">
-            <h3 className="text-blue-950 text-2xl font-bold mb-3">
-              Share Social Media
-            </h3>
-            <div className="flex items-center justify-start gap-4">
-              <FaGithub className="cursor-pointer text-blue-950 text-3xl" />
-              <FaLinkedinIn className=" cursor-pointer text-blue-950 text-3xl" />
-              <FaCodepen className="cursor-pointer text-blue-950 text-3xl" />
+            <div className="flex items-center gap-8 my-4">
+              <FaInstagram className="text-5xl text-orange-600" />
+              <div className="flex items-start flex-col">
+                <span className="text-xl font-normal text-gray-500">
+                  Instagram Handle
+                </span>
+                <p className="text-xl font-semibold text-green-800">
+                  ailepower
+                </p>
+              </div>
             </div>
-          </div> */}
+          </div>
         </div>
         <div className="bg-green-700 rounded-2xl py-10 px-8 w-full md:w-1/2">
           <h3 className="text-3xl pb-4 font-bold text-white">Add Details</h3>
@@ -139,7 +147,7 @@ const Contact = () => {
           </form>
           <span className="my-[20px]">{result}</span>
         </div>
-      </div>
+      </motion.div>
     </div>
   );
 };
