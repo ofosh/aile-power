@@ -15,7 +15,7 @@ const Contact = () => {
     setResult("Sending....");
     const formData = new FormData(event.target);
 
-    formData.append("access_key", "70571834-6a2c-43c4-9401-3e3c5cf64e71");
+    formData.append("access_key", "ee6140a1-8a89-4064-9160-2f34c1a02f32");
 
     const response = await fetch("https://api.web3forms.com/submit", {
       method: "POST",
@@ -54,7 +54,7 @@ const Contact = () => {
               </span>
             </h2>
             <p className="mt-4 text-xl w-[300px]">
-              Contact me today let me help you with my services!
+              We would love to want to hear from you!
             </p>
           </div>
           {/* contact-details */}
@@ -77,7 +77,7 @@ const Contact = () => {
                   Phone Number
                 </span>
                 <p className="text-xl font-semibold text-green-800">
-                  +234 7040 267 439
+                  +234 706 047 6013
                 </p>
               </div>
             </div>
@@ -88,7 +88,7 @@ const Contact = () => {
                   Email Address
                 </span>
                 <p className="text-xl font-semibold text-green-800">
-                  ailepower15@gmail.com
+                  ailepowerr15@gmail.com
                 </p>
               </div>
             </div>
@@ -99,7 +99,7 @@ const Contact = () => {
                   Instagram Handle
                 </span>
                 <p className="text-xl font-semibold text-green-800">
-                  ailepower
+                  aile_power
                 </p>
               </div>
             </div>
@@ -140,7 +140,7 @@ const Contact = () => {
               required
               className="block w-full focus:outline-none bg-transparent p-[15px] rounded-2xl border-2 text-white mt-[8px] resize-none"
             />
-            <button className="bg-white flex items-center text-[#000f38] rounded-xl mt-[20px] font-semibold text-lg p-[14px]">
+            <button className="bg-white flex items-center text-[#000f38] rounded-xl mt-[20px] mb-3 font-semibold text-lg p-[14px]">
               Submit Now{" "}
               <IoSend className="text-2xl text-[#000f38] ml-[10px]" />
             </button>

@@ -5,22 +5,18 @@ import Features from "./components/Features";
 import Works from "./components/Works";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
-import PlayVideo from "./components/PlayVideo";
-// import ProductFeatures from "./components/ProductFeatures";
-import { useState } from "react";
+// import Product from "./components/product";
 
 const App = () => {
-  const [playState, setPlayState] = useState(false);
   return (
     <div className="overflow-hidden max-w-full container">
-      <Hero setPlayState={setPlayState} />
+      <Hero />
       <About />
       <Works />
       <Features />
-      {/* <ProductFeatures /> */}
+      {/* <Product /> */}
       <Contact />
       <Footer />
-      <PlayVideo playState={playState} setPlayState={setPlayState} />
     </div>
   );
 };

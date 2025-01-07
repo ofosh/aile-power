@@ -8,7 +8,7 @@ const Features = () => {
       className="flex flex-col items-center justify-center container mx-auto p-14 md:px-20 lg:px-32 max-w-full overflow-hidden bg-gray-50 "
       id="Features"
     >
-      <h1 className="text-2xl sm:text-4xl font-bold mb-2">
+      <h1 className="text-3xl sm:text-5xl font-bold mb-2">
         The{" "}
         <span className="underline underline-offset-4 decoration-1 under font-light">
           Benefits

@@ -1,9 +1,13 @@
-import React from "react";
+import React, { useState } from "react";
 import Navbar from "./Navbar";
 import { motion } from "framer-motion";
 import { FaCirclePlay } from "react-icons/fa6";
+import PlayVideo from "./PlayVideo";
+import Product from "./product";
 
-const Hero = ({ setPlayState }) => {
+const Hero = () => {
+  const [playerVideo, setPlayerVideo] = useState(false);
+  const [openModal, setOpenModal] = useState(false);
   return (
     <div
       className="min-h-screen mb-4 bg-cover bg-center flex items-center w-full overflow-hidden"
@@ -23,21 +27,24 @@ const Hero = ({ setPlayState }) => {
         <h2 className="text-6xl sm:text-7xl md:text-[92px] inline-block max-w-3xl leading-normal font-extrabold pt-20 text-white">
           Experience Life the Smart Way
         </h2>
-        <div className="space-x-3 mt-16 ">
+        <div className=" flex items-center justify-center md:flex-row flex-col mt-16 ">
           <button
-            className="border border-white px-6 py-3 rounded font-bold text-xl"
+            className="border flex items-center justify-center bg-green-800 border-white px-6 py-3 rounded font-bold text-xl"
             onClick={() => {
-              setPlayState(true);
+              setPlayerVideo(true);
             }}
           >
-            Play Video
+            Play Video <FaCirclePlay className="text-3xl ml-3" />
           </button>
-          <a
-            href="#About"
-            className="bg-green-600 px-8 py-3 transition delay-500 text-xl rounded"
+          {playerVideo && <PlayVideo closeModalVideo={setPlayerVideo} />}
+
+          <button
+            className=" ml-3 mt-3 md:mt-0 bg-orange-500 text-white font-semibold px-8 py-4 rounded-full uppercase"
+            onClick={() => setOpenModal(true)}
           >
-            About Us
-          </a>
+            Pre Order Now
+          </button>
+          {openModal && <Product closeModal={setOpenModal} />}
         </div>
       </motion.div>
     </div>
