@@ -43,7 +43,3 @@ const Features = () => {
 };
 
 export default Features;
-
-// features-notes note-type-1 title-left-bottom wow fadeInRight
-
-// z-index: 2; top: 250px; right: -50px; visibility: visible; animation-name: fadeInRight;
