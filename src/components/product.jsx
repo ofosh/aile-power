@@ -7,11 +7,11 @@ const Product = ({ closeModal }) => {
   const differentSize = [
     {
       name: "8 litres",
-      price: 120000000,
+      price: 147300000,
     },
     {
       name: "12 litres",
-      price: 140000000,
+      price: 172881000,
     },
   ];
   const publicKey = "pk_live_324ed20cd07c4121ca9cc2b77ae20685d1b59482";
@@ -49,8 +49,8 @@ const Product = ({ closeModal }) => {
   };
 
   return (
-    <div className="bg-opacity-30 backdrop-blur-md fixed top-0 left-0 w-[100%] h-full z-10 flex mt-8 items-center justify-between flex-col overflow-auto py-4">
-      <div className="bg-white flex items-center md:items-start justify-center md:relative md:top-10 w-full md:w-[80%] gap-8 py-4 md:py-8 px-4 rounded-2xl flex-col  md:flex-row md:between">
+    <div className="bg-opacity-50 backdrop-blur-md fixed top-0 left-0 w-[100%] h-full z-10 flex items-center justify-between flex-col overflow-auto py-4">
+      <div className="bg-white flex items-center md:items-start justify-center md:relative md:top-10 w-full md:w-[80%] gap-8 py-4 md:py-8 px-4 rounded-2xl flex-col  md:flex-row md:justify-around">
         <div className="item">
           <img src={assets.twin} width={300} />
         </div>
@@ -72,51 +72,51 @@ const Product = ({ closeModal }) => {
               </p>
             </div>
           </div>
-          <form className="flex items-center justify-center flex-col">
+          <form className="flex items-start justify-center flex-col">
             <div className="flex justify-center items-center mt-2 gap-6">
-              <label className="text-black">Name</label>
+              <label className="text-black text-[20px]">Name:</label>
               <input
                 type="text"
                 id="name"
-                className="outline-none focus:outline-none px-2 py-2 w-full border-b-2 text-black"
+                className="outline-none focus:outline-none px-4 w-full border-gray-700 border-b-2 text-black"
                 required
                 onChange={(e) => setName(e.target.value)}
               />
             </div>
             <div className="flex justify-center items-center mt-2 gap-6">
-              <label className="text-black">Email</label>
+              <label className="text-black text-[20px]">Email:</label>
               <input
                 type="text"
                 id="email"
-                className="outline-none focus:outline-none px-2 py-2 w-full border-b-2 text-black"
+                className="outline-none focus:outline-none px-4 w-full border-gray-700 border-b-2 text-black"
                 required
                 onChange={(e) => setEmail(e.target.value)}
               />
             </div>
             <div className="flex justify-center items-center mt-2 gap-6">
-              <label className="text-black">Phone</label>
+              <label className="text-black text-[20px]">Phone:</label>
               <input
                 type="text"
                 id="phone"
-                className="outline-none focus:outline-none px-2 py-2 w-full border-b-2 text-black"
+                className="outline-none focus:outline-none px-4 w-full border-gray-700 border-b-2 text-black"
                 required
                 onChange={(e) => setPhone(e.target.value)}
               />
             </div>
             <div className="flex justify-center items-center mt-2 gap-6">
-              <label className="text-black">Quantity</label>
+              <label className="text-black text-[20px]">Qty:</label>
               <input
                 type="number"
                 id="quantity"
-                className="outline-none focus:outline-none px-2 py-1  w-full border-b-2 text-black"
+                className="outline-none focus:outline-none px-4 border-gray-700 w-full border-b-2 text-black"
                 required
                 onChange={(e) => setQuantity(e.target.value)}
               />
             </div>
             <div className="flex justify-center items-center mt-2 gap-6 relative">
-              <label className="text-black">Size</label>
+              <label className="text-black text-[20px]">Size</label>
               <select
-                className="block appearance-none w-full bg-gray-200 border border-gray-200 text-gray-700 py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+                className="block appearance-none w-full bg-gray-100 border border-gray-200 text-gray-700 py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
                 onChange={(e) => handleSelect(e.target.value)}
               >
                 {differentSize.map((item, index) => (
@@ -130,7 +130,7 @@ const Product = ({ closeModal }) => {
                   </option>
                 ))}
               </select>
-              <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">
+              <div className="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">
                 <svg
                   class="fill-current h-4 w-4"
                   xmlns="http://www.w3.org/2000/svg"
@@ -143,7 +143,7 @@ const Product = ({ closeModal }) => {
           </form>
           <PaystackButton
             {...componentProps}
-            className="px-6 py-4 bg-green-700 text-white mt-4 mx-auto flex items-center justify-center"
+            className="px-6 py-4 bg-green-700 text-white mt-6 mx-auto flex items-center justify-center"
           />
         </div>
         <RiCloseCircleFill

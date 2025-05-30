@@ -5,8 +5,7 @@ import Features from "./components/Features";
 import Works from "./components/Works";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
-// import Product from "./components/product";
-
+import { FaWhatsapp } from "react-icons/fa";
 const App = () => {
   return (
     <div className="overflow-hidden max-w-full container">
@@ -14,9 +13,13 @@ const App = () => {
       <About />
       <Works />
       <Features />
-      {/* <Product /> */}
       <Contact />
       <Footer />
+      <div className="fixed right-[24px] bottom-5">
+        <a href="https://wa.me/23407032036552">
+          <FaWhatsapp className="text-5xl bg-green-700 text-white rounded-full p-1" />
+        </a>
+      </div>
     </div>
   );
 };

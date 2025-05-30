@@ -17,9 +17,9 @@ const About = () => {
       <p className="text-gray-500 max-w-80 text-center mb-8">
         Smart Living, Inspired Life
       </p>
-      <div className="flex flex-col md:flex-row items-center justify-between md:items-start gap-20">
+      <div className="flex flex-col md:flex-row items-center justify-between md:items-center gap-20">
         <img
-          src={assets.smartbin1}
+          src={assets.ailepowerAbout}
           className="w-full sm:w-3/6 max-w-lg shadow-lg"
           alt="brand"
         />

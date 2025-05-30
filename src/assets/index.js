@@ -1,7 +1,7 @@
 import logo from "../assets/logo.png";
-import step1 from "../assets/step-1.png";
-import step2 from "../assets/step-2.png";
-import step3 from "../assets/step-3.png";
+import step1 from "../assets/step-1.jpg";
+import step2 from "../assets/step-2.jpg";
+import step3 from "../assets/step-3.jpg";
 import step4 from "../assets/step-4.png";
 import step5 from "../assets/step-5.png";
 import twin from "../assets/twin.png";
@@ -26,9 +26,11 @@ import f3 from "../assets/f-3.jpeg";
 import f4 from "../assets/f-4.jpeg";
 import f5 from "../assets/f-5.jpeg";
 import f6 from "../assets/f-6.jpeg";
+import ailepowerAbout from "../assets/ailepower-about.jpg";
 import videoFile from "../assets/ailepower.mp4";
 
 export const assets = {
+  ailepowerAbout,
   videoFile,
   logo,
   step1,
