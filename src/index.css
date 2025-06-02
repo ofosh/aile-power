@@ -7,3 +7,7 @@
 * {
   font-family: "Gabarito", sans-serif;
 }
+
+.slick-slide > div {
+  margin: 0 10px;
+}

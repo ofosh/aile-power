@@ -15,15 +15,9 @@ const About = () => {
         </span>
       </h1>
       <p className="text-gray-500 max-w-80 text-center mb-8">
-        Smart Living, Inspired Life
+        Smart Living, Simplified
       </p>
-      <div className="flex flex-col md:flex-row items-center justify-between md:items-center gap-20">
-        <img
-          src={assets.ailepowerAbout}
-          className="w-full sm:w-3/6 max-w-lg shadow-lg"
-          alt="brand"
-        />
-
+      <div className="flex flex-col lg:flex-row items-center  lg:items-center gap-20">
         <motion.div
           className="flex flex-col items-center md:items-start  text-gray-600"
           initial={{ opacity: 0, y: 100 }}
@@ -31,27 +25,24 @@ const About = () => {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
         >
-          <p className="my-10 max-w-lg">
-            Aile Power is committed and dedicated in making living comfortable,
-            convenient, smart and Accessible, Smart Living is not just about
-            technology; it's about enhancing the quality of life by creating an
-            environment that is more responsive, adaptable, and aligned with
-            modern needs. It symbolizes the future of living, where comfort
-            meets innovation, and sustainability becomes a way of life.
+          <p className="my-3 max-w-lg">
+            AILE Power is a Nigerian smart technology company launched in 2024,
+            committed to transforming everyday routines through intelligent,
+            functional, and beautifully designed solutions that make life
+            easier, cleaner, and more connected.
           </p>
-          <div className="grid md:grid-cols-2 grid-cols-1 gap-6 md:gap-10 w-full 2xl:pr-28">
-            {about.map((item, index) => (
-              <div key={index} className="flex items-center gap-3">
-                <img src={item.icon} width={45} alt="" />
-                <p className="font-semibold">{item.title}</p>
-              </div>
-            ))}
-          </div>
-          <a href="#Features">
-            <button className="bg-orange-600 text-white px-8 py-2 mt-10 rounded">
-              Learn More
-            </button>
-          </a>
+          <p className="my-3 max-w-lg">
+            Our mission is to bring smart living to homes, offices, and public
+            spaces across Africa—starting with our debut product, the ColorPop
+            Smart Sensor Bin. By blending innovation with practical design, we
+            aim to elevate hygiene, efficiency, and comfort in daily life.
+          </p>
+          <p className="my-3 max-w-lg">
+            At AILE Power, we believe smart living should be simple. Our
+            commitment to quality, convenience, and forward-thinking design
+            drives every product we create. This is just the beginning of a
+            smarter, brighter future.
+          </p>
         </motion.div>
       </div>
     </div>

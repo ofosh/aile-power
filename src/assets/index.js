@@ -107,12 +107,12 @@ export const works = [
   {
     step: 2,
     imgUrl: step2,
-    desc: "Install a 2AA battery",
+    desc: "Install 6 AAA batteries",
   },
   {
     step: 3,
     imgUrl: step3,
-    desc: "Remove the bucket",
+    desc: "Remove the inner bucket",
   },
   {
     step: 4,
@@ -122,7 +122,7 @@ export const works = [
   {
     step: 5,
     imgUrl: step5,
-    desc: "Insert back the lid",
+    desc: "Reinsert the bucket and close the lid",
   },
 ];
 
@@ -144,5 +144,32 @@ export const featuredProducts = [
   },
   {
     imgUrl: f6,
+  },
+];
+
+export const testimonials = [
+  {
+    text: '"Clean, smart, and it actually works Honestly wasn’t sure if I needed a ‘smart’ bin, but after using this one for a few weeks, I can’t go back to regular bins. It opens quickly and closes by itself, so I don’t have to touch anything. Especially useful when cooking"',
+    name: "Kemi A.",
+  },
+  {
+    text: '"Bought the 12L size and it’s perfect for my office. The design is subtle but modern. I’d definitely recommend it if you’re into smart home upgrades that actually work."',
+    name: "Gbenga M.",
+  },
+  {
+    text: '"Honestly one of the best kitchen upgrades I’ve made this year. The sensor is sensitive in the best way and it looks so elegant. Guests keep asking me where I got it!"',
+    name: "Rita O.",
+  },
+  {
+    text: '"Efficient and clean! The system is great with battery saving, but Nigeria needs stronger battery options to match."',
+    name: "Chinedu A.",
+  },
+  {
+    text: '"The smart sensor feature is surprisingly responsive. It’s been such a game-changer for maintaining hygiene in my home. I just wish there were more color options available now , but the neutral tones are still classy."',
+    name: "Sharon E.",
+  },
+  {
+    text: '"We got this bin for our kids’ playroom, and they really enjoy it because it opens like magic. It was easy for them to learn how to wave their hands to use it, now it works perfectly!"',
+    name: "Chidera M.",
   },
 ];

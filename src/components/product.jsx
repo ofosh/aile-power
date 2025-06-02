@@ -7,11 +7,11 @@ const Product = ({ closeModal }) => {
   const differentSize = [
     {
       name: "8 litres",
-      price: 147300000,
+      price: 10000,
     },
     {
       name: "12 litres",
-      price: 172881000,
+      price: 10000,
     },
   ];
   const publicKey = "pk_live_324ed20cd07c4121ca9cc2b77ae20685d1b59482";
@@ -19,6 +19,7 @@ const Product = ({ closeModal }) => {
   const [email, setEmail] = useState("");
   const [name, setName] = useState("");
   const [phone, setPhone] = useState("");
+  const [address, setAddress] = useState("");
   const [quantity, setQuantity] = useState(0);
   const [size, setSize] = useState({});
 
@@ -30,8 +31,34 @@ const Product = ({ closeModal }) => {
         email,
         amount: size.price * quantity,
         metadata: {
-          name,
-          phone,
+          cart_id: 398,
+          custom_fields: [
+            {
+              display_name: "Customer' Name",
+              variable_name: name,
+              value: name,
+            },
+            {
+              display_name: "Phone Number",
+              variable_name: phone,
+              value: phone,
+            },
+            {
+              display_name: "Address",
+              variable_name: address,
+              value: address,
+            },
+            {
+              display_name: "Quantity",
+              variable_name: quantity,
+              value: quantity,
+            },
+            {
+              display_name: "Size",
+              variable_name: size,
+              value: size,
+            },
+          ],
         },
         publicKey,
         size,
@@ -63,13 +90,27 @@ const Product = ({ closeModal }) => {
               Limited Edition
             </h2>
             <div className="flex items-center gap-4 mb-3">
-              {/* <p className="line-through text-gray-400 text-2xl font-light">
-                ₦145,000
-              </p>
-              <p className="text-green-800 font-bold text-3xl">₦132,000</p> */}
               <p className="bg-orange-500 px-2 py-1 text-lg text-white">
-                Early Bird Offer
+                Price Alert
               </p>
+              <div className="flex flex-col">
+                <div className="flex flex-row gap-2 items-center">
+                  <p className="text-black text-2xl font-light">8L:</p>
+                  <p className="line-through text-gray-400 text-2xl font-light">
+                    ₦174,999
+                  </p>
+                  <b className="text-black">||</b>
+                  <p className="text-green-800 font-bold text-3xl">₦147,300</p>
+                </div>
+                <div className="flex flex-row gap-2 items-center">
+                  <p className="text-black text-2xl font-light">12L:</p>
+                  <p className="line-through text-gray-400 text-2xl font-light">
+                    ₦199,999
+                  </p>
+                  <b className="text-black">||</b>
+                  <p className="text-green-800 font-bold text-3xl">₦172,881</p>
+                </div>
+              </div>
             </div>
           </div>
           <form className="flex items-start justify-center flex-col">
@@ -104,6 +145,16 @@ const Product = ({ closeModal }) => {
               />
             </div>
             <div className="flex justify-center items-center mt-2 gap-6">
+              <label className="text-black text-[20px]">Address:</label>
+              <input
+                type="text"
+                id="phone"
+                className="outline-none focus:outline-none px-4 w-full border-gray-700 border-b-2 text-black"
+                required
+                onChange={(e) => setAddress(e.target.value)}
+              />
+            </div>
+            <div className="flex justify-center items-center mt-2 gap-6">
               <label className="text-black text-[20px]">Qty:</label>
               <input
                 type="number"
@@ -124,7 +175,7 @@ const Product = ({ closeModal }) => {
                     key={index}
                     id="size"
                     className="outline-none
-                focus:outline-none px-2 py-1 w-full border-b-2 text-black"
+                focus:outline-none px-2 mr-3 py-1 w-full border-b-2 text-black"
                   >
                     {item.name}
                   </option>

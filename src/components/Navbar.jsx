@@ -35,7 +35,7 @@ const Navbar = () => {
         }  container mx-auto flex justify-between items-center py-2 px-6 md:px-20 lg:px-32 bg-transparent`}
       >
         <img src={assets.logo} className="w-[80px]" alt="logo" />
-        <ul className="hidden md:flex gap-7 text-black text-lg font-bold">
+        <ul className="hidden lg:flex gap-7 text-black text-lg font-bold">
           <a href="#Header" className="cursor-pointer hover:text-gray-400">
             Home
           </a>
@@ -43,7 +43,7 @@ const Navbar = () => {
             About
           </a>
           <a href="#Features" className="cursor-pointer hover:text-gray-400">
-            Features
+            Products
           </a>
           <a href="#Reviews" className="cursor-pointer hover:text-gray-400">
             Reviews
@@ -51,13 +51,13 @@ const Navbar = () => {
         </ul>
 
         <a href="#Contact">
-          <button className="hidden md:block bg-orange-500 text-white font-semibold px-8 py-2 rounded-full uppercase">
+          <button className="hidden lg:block bg-orange-500 text-white font-semibold px-8 py-2 rounded-full uppercase">
             Contact Us
           </button>
         </a>
 
         <RiMenu3Fill
-          className="md:hidden w-7 cursor-pointer text-4xl"
+          className="lg:hidden w-7 cursor-pointer text-4xl"
           onClick={() => setShowMobileMenu(true)}
         />
       </div>
@@ -102,6 +102,11 @@ const Navbar = () => {
             className="px-4 py-2 rounded-full inline-block"
           >
             Reviews
+          </a>
+          <a href="#Contact">
+            <button className=" bg-orange-500 text-white font-semibold px-8 py-2 rounded-full uppercase">
+              Contact Us
+            </button>
           </a>
         </ul>
       </div>

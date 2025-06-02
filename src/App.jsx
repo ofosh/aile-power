@@ -6,13 +6,15 @@ import Works from "./components/Works";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import { FaWhatsapp } from "react-icons/fa";
+import Reviews from "./components/Reviews";
 const App = () => {
   return (
     <div className="overflow-hidden max-w-full container">
       <Hero />
       <About />
-      <Works />
       <Features />
+      <Works />
+      <Reviews />
       <Contact />
       <Footer />
       <div className="fixed right-[24px] bottom-5">

@@ -50,7 +50,7 @@ const Contact = () => {
             <h2 className="text-4xl font-bold text-black sm:text-5xl">
               Contact {""}
               <span className="border-b-2 font-extrabold border-orange-800 text-orange-600">
-                Me {""}
+                Us {""}
               </span>
             </h2>
             <p className="mt-4 text-xl w-[300px]">
