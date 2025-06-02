@@ -7,11 +7,11 @@ const Product = ({ closeModal }) => {
   const differentSize = [
     {
       name: "8 litres",
-      price: 10000,
+      price: 14730000,
     },
     {
       name: "12 litres",
-      price: 10000,
+      price: 17288100,
     },
   ];
   const publicKey = "pk_live_324ed20cd07c4121ca9cc2b77ae20685d1b59482";
