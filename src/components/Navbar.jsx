@@ -42,7 +42,7 @@ const Navbar = () => {
           <a href="#About" className="cursor-pointer hover:text-gray-400">
             About
           </a>
-          <a href="#Features" className="cursor-pointer hover:text-gray-400">
+          <a href="#Products" className="cursor-pointer hover:text-gray-400">
             Products
           </a>
           <a href="#Reviews" className="cursor-pointer hover:text-gray-400">
@@ -64,7 +64,7 @@ const Navbar = () => {
 
       {/* mobile menu */}
       <div
-        className={`md:hidden ${
+        className={`lg:hidden ${
           showMobileMenu ? "fixed w-full" : "h-0 w-0"
         } fixed w-full right-0 top-0 bottom-0 overflow-hidden bg-white`}
       >
@@ -91,10 +91,10 @@ const Navbar = () => {
           </a>
           <a
             onClick={() => setShowMobileMenu(false)}
-            href="#Features"
+            href="#Products"
             className="px-4 py-2 rounded-full inline-block"
           >
-            Features
+            Products
           </a>
           <a
             onClick={() => setShowMobileMenu(false)}
@@ -103,7 +103,7 @@ const Navbar = () => {
           >
             Reviews
           </a>
-          <a href="#Contact">
+          <a href="#Contact" onClick={() => setShowMobileMenu(false)}>
             <button className=" bg-orange-500 text-white font-semibold px-8 py-2 rounded-full uppercase">
               Contact Us
             </button>
