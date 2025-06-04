@@ -26,13 +26,13 @@ const Footer = () => {
               Home
             </a>
             <a href="#About" className="hover:text-white">
-              About Us
+              About us
             </a>
             <a href="#Contact" className="hover:text-white">
               Contact
             </a>
             <a href="#" className="hover:text-white">
-              Privacy Policy
+              Privacy policy
             </a>
           </ul>
         </div>

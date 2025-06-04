@@ -54,7 +54,7 @@ const Contact = () => {
               </span>
             </h2>
             <p className="mt-4 text-xl w-[300px]">
-              We would love to want to hear from you!
+              We would love to hear from you!
             </p>
           </div>
           {/* contact-details */}
@@ -88,7 +88,7 @@ const Contact = () => {
                   Email Address
                 </span>
                 <p className="text-xl font-semibold text-green-800">
-                  ailepowerr15@gmail.com
+                  contact@ailepower.com
                 </p>
               </div>
             </div>

@@ -15,8 +15,8 @@ const Works = () => {
         </span>
       </h1>
       <p className="text-gray-500 max-w-xl text-center mb-8">
-        Everybody loves tech gadgets, But our’s is different. Here is how it
-        works. Its simple and easy to install.
+        Ours is different. It's simple and easy to install, Here's how it
+        works...
       </p>
       <motion.div
         className="grid md:grid-cols-3  grid-cols-1 pt-8 gap-6 md:gap-10 w-full"
