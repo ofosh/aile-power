@@ -13,6 +13,10 @@ const Product = ({ closeModal }) => {
       name: "12 litres",
       price: 17288100,
     },
+    {
+      name: "AA Battery",
+      price: 260000,
+    },
   ];
   const publicKey = "pk_live_324ed20cd07c4121ca9cc2b77ae20685d1b59482";
 
@@ -79,7 +83,8 @@ const Product = ({ closeModal }) => {
     <div className="bg-opacity-50 backdrop-blur-md fixed top-0 left-0 w-[100%] h-full z-10 flex items-center justify-between flex-col overflow-auto py-4">
       <div className="bg-white flex items-center md:items-start justify-center md:relative md:top-10 w-full md:w-[80%] gap-8 py-4 md:py-8 px-4 rounded-2xl flex-col  md:flex-row md:justify-around">
         <div className="item">
-          <img src={assets.twin} width={300} />
+          <img src={assets.twin} width={200} />
+          <img src={assets.battery} width={200} />
         </div>
         <div className="flex items-start md:items-center flex-col">
           <div className="flex items-start flex-col">
@@ -89,7 +94,7 @@ const Product = ({ closeModal }) => {
             <h2 className="font-bold text-3xl mb-2 text-black">
               Limited Edition
             </h2>
-            <div className="flex items-center gap-4 mb-3">
+            <div className="flex items-start lg:items-center gap-4 mb-3 flex-col lg:flex-row">
               <p className="bg-orange-500 px-2 py-1 text-lg text-white">
                 Price Alert
               </p>
@@ -109,6 +114,16 @@ const Product = ({ closeModal }) => {
                   </p>
                   <b className="text-black">||</b>
                   <p className="text-green-800 font-bold text-3xl">₦172,881</p>
+                </div>
+                <div className="flex flex-row gap-2 items-center">
+                  <p className="text-black text-2xl font-light">
+                    AA Batteries:
+                  </p>
+                  <p className="line-through text-gray-400 text-2xl font-light">
+                    ₦2,850
+                  </p>
+                  <b className="text-black">||</b>
+                  <p className="text-green-800 font-bold text-3xl">₦2,600</p>
                 </div>
               </div>
             </div>
@@ -165,7 +180,7 @@ const Product = ({ closeModal }) => {
               />
             </div>
             <div className="flex justify-center items-center mt-2 gap-6 relative">
-              <label className="text-black text-[20px]">Size</label>
+              <label className="text-black text-[20px]">Product</label>
               <select
                 className="block appearance-none w-full bg-gray-100 border border-gray-200 text-gray-700 py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
                 onChange={(e) => handleSelect(e.target.value)}

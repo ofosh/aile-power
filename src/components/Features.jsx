@@ -77,24 +77,3 @@ const Features = () => {
 };
 
 export default Features;
-
-/* 
-<motion.div
-        className="grid md:grid-cols-3  grid-cols-1 pt-8 gap-6 md:gap-10 w-full 2xl:pr-28"
-        initial={{ opacity: 0, y: 100 }}
-        transition={{ duration: 1.5 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true }}
-      >
-        {features.map((item, index) => (
-          <div key={index} className="flex items-start gap-4">
-            <img src={item.imgUrl} width={40} alt="" />
-            <div>
-              <h3 className=" text-2xl font-semibold">{item.title}</h3>
-              <p className=" text-gray-700 font-normal">{item.desc}</p>
-            </div>
-          </div>
-        ))}
-      </motion.div>
-
-*/
