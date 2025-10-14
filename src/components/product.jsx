@@ -14,7 +14,7 @@ const Product = ({ closeModal }) => {
       price: 17288100,
     },
     {
-      name: "AA Battery",
+      name: "AAA ULTRA ALKALINE BATTERIES",
       price: 260000,
     },
   ];
@@ -117,7 +117,7 @@ const Product = ({ closeModal }) => {
                 </div>
                 <div className="flex flex-row gap-2 items-center">
                   <p className="text-black text-2xl font-light">
-                    AA Batteries:
+                    AAA UlTRA ALKALINE BATTERIES:
                   </p>
                   <p className="line-through text-gray-400 text-2xl font-light">
                     ₦2,850
