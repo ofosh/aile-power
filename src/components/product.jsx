@@ -94,36 +94,36 @@ const Product = ({ closeModal }) => {
             <h2 className="font-bold text-3xl mb-2 text-black">
               Limited Edition
             </h2>
-            <div className="flex items-start lg:items-center gap-4 mb-3 flex-col lg:flex-row">
+            <div className="flex items-start lg:items-center gap-4 mb-3 flex-col lg:flex-row border-2 px-2 py-2 rounded-lg border-orange-300">
               <p className="bg-orange-500 px-2 py-1 text-lg text-white">
                 Price Alert
               </p>
               <div className="flex flex-col">
                 <div className="flex flex-row gap-2 items-center">
-                  <p className="text-black text-2xl font-light">8L:</p>
-                  <p className="line-through text-gray-400 text-2xl font-light">
+                  <p className="text-black text-lg font-light">8L:</p>
+                  <p className="line-through text-gray-400 text-lg font-light">
                     ₦174,999
                   </p>
                   <b className="text-black">||</b>
-                  <p className="text-green-800 font-bold text-3xl">₦147,300</p>
+                  <p className="text-green-800 font-bold text-xl">₦147,300</p>
                 </div>
                 <div className="flex flex-row gap-2 items-center">
-                  <p className="text-black text-2xl font-light">12L:</p>
-                  <p className="line-through text-gray-400 text-2xl font-light">
+                  <p className="text-black text-lg font-light">12L:</p>
+                  <p className="line-through text-gray-400 text-lg font-light">
                     ₦199,999
                   </p>
                   <b className="text-black">||</b>
-                  <p className="text-green-800 font-bold text-3xl">₦172,881</p>
+                  <p className="text-green-800 font-bold text-xl">₦172,881</p>
                 </div>
                 <div className="flex flex-row gap-2 items-center">
-                  <p className="text-black text-2xl font-light">
+                  <p className="text-black text-lg text-left font-light">
                     AAA UlTRA ALKALINE BATTERIES:
                   </p>
-                  <p className="line-through text-gray-400 text-2xl font-light">
+                  <p className="line-through text-gray-400 text-lg font-light">
                     ₦2,850
                   </p>
                   <b className="text-black">||</b>
-                  <p className="text-green-800 font-bold text-3xl">₦2,600</p>
+                  <p className="text-green-800 font-bold text-xl">₦2,600</p>
                 </div>
               </div>
             </div>

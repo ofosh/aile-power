@@ -42,7 +42,7 @@ const Hero = () => {
             className=" ml-3 mt-3 md:mt-0 bg-orange-500 text-white font-semibold px-8 py-4 rounded-full uppercase"
             onClick={() => setOpenModal(true)}
           >
-            Pre Order Now
+            Place Order
           </button>
           {openModal && <Product closeModal={setOpenModal} />}
         </div>
